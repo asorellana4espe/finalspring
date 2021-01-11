@@ -20,14 +20,13 @@ public class SupervisorService implements ISupervisorService{
 
 	@Override
 	public Supervisor findById(Long id) {
-		return null;
-		// TODO Auto-generated method stub
+		return dao.findById(id).get();
 	}
 
 	@Override
 	public void delete(Long id) {
-		// TODO Auto-generated method stub
-		
+		Supervisor v = this.findById(id);
+		dao.delete(v);
 	}
 
 	@Override
@@ -38,8 +37,7 @@ public class SupervisorService implements ISupervisorService{
 
 	@Override
 	public List<Supervisor> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return (List<Supervisor>) dao.findAll();
 	}
 	
 }

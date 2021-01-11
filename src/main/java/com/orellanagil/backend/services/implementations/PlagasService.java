@@ -10,17 +10,15 @@ import com.orellanagil.backend.models.entities.Plaga;
 import com.orellanagil.backend.models.services.interfaces.IPlagasService;
 @Service
 public class PlagasService implements IPlagasService{
-	@Autowired //Inyección  de dependencias
+	@Autowired
 	private IPlaga dao;
 	@Override
 	public void save(Plaga c) {
-		// TODO Auto-generated method stub
 		dao.save(c);
 	}
 
 	@Override
 	public Plaga findById(Long id) {
-		// TODO Auto-generated method stub
 		return dao.findById(id).get();
 	}
 
@@ -32,7 +30,6 @@ public class PlagasService implements IPlagasService{
 
 	@Override
 	public List<Plaga> findAll() {
-		// TODO Auto-generated method stub
 		return (List<Plaga>) dao.findAll();
 	}
 

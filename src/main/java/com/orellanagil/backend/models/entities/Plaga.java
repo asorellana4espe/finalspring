@@ -1,8 +1,5 @@
 package com.orellanagil.backend.models.entities;
 
-import java.io.Serializable;
-
-
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,34 +17,34 @@ public class Plaga{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Basic(optional=false)
 	private Long idplaga;
-	@Column(name="Nombre_científico")
-	private String NombreCientifico;
-	@Column(name="Nombre_común")
-	private String NombreComun;
-	@Column(name="Descripcion")
-	private String Descripcion;
-	@Column(name="Tipo")
+	@Column(name="nombre_cientfico")
+	private String nombreCientifico;
+	@Column(name="nombre_común")
+	private String nombreComun;
+	@Column(name="descripcion")
+	private String descripcion;
+	@Column(name="tipo")
 	private String tipo;
 	public Plaga() {
 		super();
 	}
 	public String getNombreCientifico() {
-		return NombreCientifico;
+		return nombreCientifico;
 	}
-	public void setNombreCientifico(String nombreCientifico) {
-		NombreCientifico = nombreCientifico;
+	public void setNombreCientifico(String snombreCientifico) {
+		nombreCientifico = snombreCientifico;
 	}
 	public String getNombreComun() {
-		return NombreComun;
+		return nombreComun;
 	}
-	public void setNombreComun(String nombreComun) {
-		NombreComun = nombreComun;
+	public void setNombreComun(String snombreComun) {
+		nombreComun = snombreComun;
 	}
 	public String getDescripcion() {
-		return Descripcion;
+		return descripcion;
 	}
-	public void setDescripcion(String descripcion) {
-		Descripcion = descripcion;
+	public void setDescripcion(String sdescripcion) {
+		descripcion = sdescripcion;
 	}
 	public String getTipo() {
 		return tipo;

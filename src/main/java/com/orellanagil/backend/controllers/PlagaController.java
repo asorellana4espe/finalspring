@@ -19,7 +19,6 @@ import com.orellanagil.backend.models.entities.Plaga;
 import com.orellanagil.backend.models.services.interfaces.IPlagasService;
 
 
-@CrossOrigin(origins="http://localhost:4200")
 @RestController
 @RequestMapping("/api/plaga")
 

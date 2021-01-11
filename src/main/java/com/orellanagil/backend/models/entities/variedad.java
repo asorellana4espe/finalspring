@@ -1,7 +1,5 @@
 package com.orellanagil.backend.models.entities;
 
-import java.util.Calendar;
-
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,7 +21,7 @@ public class variedad {
 	@Column(name="nombre")
 	private String nombre;
 	@Column(name="num_matas")
-	private Calendar numMatas;	
+	private Long numMatas;	
 	
 	public variedad() {
 			
@@ -50,11 +48,11 @@ public class variedad {
 		this.nombre = nombre;
 	}
 
-	public Calendar getNumMatas() {
+	public Long getNumMatas() {
 		return numMatas;
 	}
 
-	public void setNumMatas(Calendar numMatas) {
+	public void setNumMatas(Long numMatas) {
 		this.numMatas = numMatas;
 	}
 	
